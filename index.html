@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #calculator {
+            border-style: solid;
+            border-color: blue;
+            border-width: 2px;
+            padding: 5px;
+            width: fit-content;
+            margin: auto;
+        }
+        
+        .button {
+            color: rgb(51, 10, 233);
+            height: 2.5em;
+            width: 2.5em;
+            /* padding: 10px; */
+            margin: 2px;
+        }
+
+        .equals {
+            width: 11.75em;
+        }
+
+        .displayscreen {
+            height: 40px;
+            font-size: 1.25em;
+            width: 250px;
+        }
+
+        .button:hover {
+            background: rgb(139, 238, 180);
+            color:black;
+            font-weight: bold;
+        }
+
+        .calcbuttons {
+            margin: auto;
+            width: 90%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <form>
+            <input type="text" name="display" id="display" class="displayscreen">
+        </form>
+        <div class="calcbuttons">
+            <button type="button" class="button calc num">1</button>
+            <button type="button" class="button calc num">2</button>
+            <button type="button" class="button calc num">3</button>
+            <button type="button" class="button calc operation">+</button>
+            <br>
+            <button type="button" class="button calc num">4</button>
+            <button type="button" class="button calc num">5</button>
+            <button type="button" class="button calc num">6</button>
+            <button type="button" class="button calc operation">-</button>
+            <br>
+            <button type="button" class="button calc num">7</button>
+            <button type="button" class="button calc num">8</button>
+            <button type="button" class="button calc num">9</button>
+            <button type="button" class="button calc operation">*</button>
+            <br>
+            <button type="button" class="button calc coma num">.</button> 
+            <button type="button" class="button calc num">0</button>
+            <button type="button" class="button clear">C</button> 
+            <button type="button" class="button calc operation">/</button>
+            <br>   
+            <button type="button" class="button equals">=</button>  
+        </div>
+ 
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
